@@ -108,6 +108,13 @@ h2#habilidades{
     padding-top: 20px;
     text-align: center;
 }
+h2#certificados{
+    width: 60%;
+    margin: 20px auto;
+    border-top: 1px solid currentColor;
+    padding-top: 20px;
+    text-align: center;
+}
 .cards-section {
     width: 100%;
     display: flex;
