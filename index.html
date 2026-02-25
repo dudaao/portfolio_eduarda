@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Eduarda Brandão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header id="sobre" class="header">
+        <svg id="svg-modoescuro" class="sun-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            onclick="modoEscuro()"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path class="svg-sol"
+                d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" />
+            <path class="svg-lua"
+                d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+        </svg>
+    </header>
+    <div id="topo">
+        <img src="fotos/foto_eduarda.JPG" id="img-eu" alt="">
+        <img src="fotos/nome_eduarda.png" id="img-nome" alt="">
+        <div id="quem-sou-eu">
+            <h2>Quem sou eu?</h2>
+            <p>Me chamo Eduarda e sou graduanda em Ciência da Computação pela Una Belo Horizonte e técnica em
+                Informática formada pelo COTEMIG. Minha trajetória na tecnologia começou cedo, unindo uma base técnica
+                sólida ao aprendizado contínuo e à busca por novos desafios. Sou motivada pela possibilidade de unir
+                criatividade e técnica para desenvolver soluções que otimizem processos e impactem positivamente o mundo
+                real.</p>
+        </div>
+    </div>
+    <h2 id="projetos">Meus Projetos</h2>
+    <section class="cards-section">
+        <div class="card">
+            <a href="https://dynamic-cuchufli-a6a20a.netlify.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="fotos/reproducao_site.png" alt="Foto 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="fotos/reproducao_site.png" alt="Reprodução site COTEMIG">
+                        <h3 class="titulo">Reprodução site COTEMIG</h3>
+                        <p>Projeto de reprodução de interface (UI/UX) do site oficial do COTEMIG, aplicado como estudo
+                            prático de front-end e arquitetura web.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://chimerical-khapse-ae5181.netlify.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="fotos/display_flex.png" alt="Foto 2">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="fotos/display_flex.png" alt="Reprodução site Display Flex">
+                        <h3 class="titulo">Reprodução de site com display flex</h3>
+                        <p>Aplicação didática focada no aprendizado de Display Flex, desenvolvida para consolidar
+                            conceitos essenciais de estilização e arquitetura de interface.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://eclectic-lokum-9a7726.netlify.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="fotos/site_delivery.png" alt="Foto 3">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="fotos/site_delivery.png" alt="Site Delivery">
+                        <h3 class="titulo">Site Delivery</h3>
+                        <p>Projeto de criação de interface e design visual, aplicado como estudo prático de navegação de
+                            páginas e experiência do usuário (UX).</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://effulgent-toffee-15d0ff.netlify.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="fotos/formulario_site.png" alt="Foto 4">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="fotos/formulario_site.png" alt="Novo Projeto">
+                        <h3 class="titulo">Formulário Site</h3>
+                        <p>Projeto focado no desenvolvimento de formulários dinâmicos, aplicado como estudo prático de
+                            máscaras de entrada, validação de dados e estruturação de campos.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://bespoke-duckanoo-322f3a.netlify.app/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="fotos/reminder_app.png" alt="Foto 5">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="fotos/reminder_app.png" alt="Projeto 5">
+                        <h3 class="titulo">Reminder App</h3>
+                        <p>Projeto de gerenciamento de lembretes desenvolvido como estudo prático de front‑end em
+                            JavaScript (React + Vite), com interface dinâmica e estilização via styled‑components.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <h2 id="habilidades">Minhas Habilidades</h2>
+    <canvas id="myPolarAreaChart"></canvas>
+    <h2 id="habilidades">Certificados</h2>
+    <iframe src="certificate/Certificados_EduardaFerreiraBrandão.pdf" width="700px" height="600px"></iframe>
+    <footer>
+        <div class="footer-container">
+            <!-- Links sociais -->
+            <div class="footer-section social-links">
+                <h3 class="titulo">Redes Sociais</h3>
+                <a href="https://github.com/dudaao" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/eduardafbrandao/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/dudocq/" target="_blank">Instagram</a>
+                <a href="https://wa.me/5531998854561" target="_blank">WhatsApp</a>
+            </div>
+
+            <!-- Descrição -->
+            <div class="footer-section description">
+                <h3 class="titulo">Sobre mim</h3>
+                <p>Eduarda, estudante de Ciência da Computação (Una) e técnica em Informática (COTEMIG), focada em
+                    evolução constante no mundo da tecnologia.</p>
+            </div>
+
+            <!-- Links para seções do site -->
+            <div class="footer-section">
+                <h3 class="titulo">Navegação</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

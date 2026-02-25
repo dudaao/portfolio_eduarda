@@ -1,0 +1,318 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+.modoEscuro{
+    background-color: #333 !important;
+    color: white;
+    fill: white;
+}
+.modoEscuro input,.modoEscuro textarea{
+    border: none !important;
+    border-bottom: 1px solid white !important;
+}
+
+.svg-sol, body.modoEscuro .svg-lua{
+    display: block;
+    fill: white;
+}
+body.modoEscuro .svg-sol, .svg-lua {
+    display: none; /* Exemplo de estilo a ser aplicado */
+}   
+*{
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    fill: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefa;
+    color: black;
+    font-family: "Outfit", sans-serif;
+    border-color: black;
+    transition: .3s;
+}
+
+.header {
+    text-align: right;
+    width: 100%;
+    background-color: #292929;
+}
+
+.sun-container {
+    width: 40px;
+    fill: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 6%;
+}
+#topo{
+    grid-gap: 10px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;    
+    
+}
+#img-eu,#img-nome{
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+#quem-sou-eu{
+    border-color: currentColor;
+    border-top: 1px solid ;
+    grid-column: 1 / -1; /* ocupa ambas as colunas do grid */
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px 10px;
+    justify-self: center;
+    align-self: center;
+    max-width: 480px;
+    margin: 0 auto;
+}
+h2{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Linha superior do título 'Meus Projetos' (igual a #quem-sou-eu) */
+h2#projetos{
+    width: 60%;
+    margin: 20px auto;
+    border-top: 1px solid currentColor;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Linha superior do título 'Minhas Habilidades' (igual a #quem-sou-eu) */
+h2#habilidades{
+    width: 60%;
+    margin: 20px auto;
+    border-top: 1px solid currentColor;
+    padding-top: 20px;
+    text-align: center;
+}
+.cards-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    width: 25%;
+    min-width: 250px;
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 10px;
+    text-align: center;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card .titulo {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite; /* Animação de digitação e piscamento */
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: currentColor;
+}
+
+.card:hover .flip-card-inner {
+    z-index: 999;
+    transform: rotateY(180deg) scale(1.1); /* Rotaciona no hover */
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Mantém o estilo 3D */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotaciona no hover */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o lado oposto */
+}
+.flip-card-back *{
+    color: currentColor;
+}
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.flip-card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px ;
+    transform: rotateY(180deg); /* Rotaciona o verso */
+    text-align: center; /* Centraliza texto */
+    position: relative;
+}
+
+.flip-card-back img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    opacity: 0.3;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.flip-card-back h3,
+.flip-card-back p {
+    position: relative;
+    z-index: 2;
+    padding: 10px 20px;
+}
+#myPolarAreaChart {
+    max-width: 500px;
+    max-height: 500px;
+}
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+    #quem-sou-eu {
+        grid-column: 1/3;
+    }
+    #quem-sou-eu h2{
+        text-align: center;
+    }
+    #quem-sou-eu p{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 80%;
+    }
+}
+footer {
+    background-color: #292929;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Forçar mesmo tamanho de fonte e espaçamento para todos os textos dentro do footer */
+.footer-container, .footer-container * {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .footer-section {
+        flex-basis: 30%;
+        text-align: left;
+    }
+}
+
+/* Links sociais */
+.footer-section.social-links a {
+    display: block;
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-section.social-links a:hover {
+    color: #007BFF;
+}
+
+/* Descrição */
+.footer-section.description {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Links de navegação */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF;
+}
+
+@media (min-width: 600px) {
+    footer {
+        text-align: left;
+    }
+}
+iframe{
+    border: none;
+    border-radius: 15px;
+}
